@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'project-counter';
+  count = 0;
+  increment() {
+    this.count++
+  }
+  decrement() {
+    this.count--
+  }
+
+  myText = "Writer";
+
+
 }
+
